@@ -1,0 +1,5 @@
+# ignore files to compile LaTeX into PDF
+*.aux
+*.log
+*.synctex.gz
+*.pdf
