@@ -110,4 +110,9 @@ footer {
         margin: 1em;
         width: 100%;
     }
+    footer {
+        max-width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
  }
