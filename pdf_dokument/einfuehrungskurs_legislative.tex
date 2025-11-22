@@ -7,7 +7,18 @@
 
 \usepackage{fancyhdr}
 
+\usepackage{caption}
+\captionsetup[figure]{name=}
+
 \usepackage{float}
+
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt
+]{biblatex}
+\setlength\bibitemsep{1.0\baselineskip}
+\addbibresource{quellen.bib}
 
 \usepackage{wrapfig}
 \usepackage{graphicx}
@@ -56,7 +67,7 @@
             Ausserordentliche Gesamterneuerungswahlen sind durch Totalrevisionen der Verfassung möglich. Diese können vom Volk oder von den Räten initiiert werden. Wird einer Totalrevision zugestimmt, kommt es zu ausserordentlichen Neuwahlen des Bundesrates sowie der beiden Kammern der Bundesversammlung. Jeder Bundesrat ist Vorstand eines Departementes. Diese Verteilung geschieht nicht durch das Parlament.
             \begin{figure}[H]
                 \includegraphics[width=\textwidth]{a.o._Gesamterneuerung-d.png}
-                \caption{Ablauf Gesamterneuerungswahlen}
+                \caption{Ablauf Gesamterneuerungswahlen \cite{ao_gesamterneuerung}}
             \end{figure}
     \newpage
     \section{Oberaufsicht} %5
@@ -77,7 +88,7 @@
         \subsection{Ordentliches Verfahren} %6.1
             \begin{wrapfigure}{r}{0.35\textwidth}
                 \includegraphics[width=0.9\linewidth]{Genehmigung_Staatsvertraege-d.png}
-                \caption{Ordentliches Verfahren}
+                \caption{Ordentliches Verfahren \cite{staatsvertraege}}
             \end{wrapfigure}
             Der Bundesrat befragt die für die Aussenpolitik zuständigen Kommissionen zu den Richtlinien und führt die Vertragsverhandlugnen. Nach der Unterzeichnung wird der Vertrag an die Bundesversammlung zur Genehmigung weitergereicht.  \\
             Grundsätzlich wird nur über den gesamten Vertrag entschieden. Ist dies jedoch möglich, kann das Parlament den Bundesrat zur Einbringung eines Vorbehaltes verpflichten. Wird ein Vertrag zum zweiten Mal abgelehnt, ist die Entscheidung entdgültig. \\
@@ -88,4 +99,5 @@
     \vspace{0.5cm}
     \section{Gewährleistung der Verfassungen} %7
         Die Bundesversammlung ist ebenfalls für die Gewährleistung der Kantonsverfassungen verantwortlich. Sie überprüft den Inhalt der Verfassungen und entscheidet, ob diese der Auslegung der Bundesverfassung entspricht. Die Kantone müssen jegliche Verfassungsänderungen mitteilen und um eine Überprüfung bitten.
+    \printbibliography
 \end{document}
