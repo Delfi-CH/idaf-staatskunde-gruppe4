@@ -8,250 +8,191 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1 class="title">IDAF Gruppe 4</h1>
+    <div class="main-title-row ">
+        <h1 class="title">IDAF Gruppe 4</h1>  
+        <a href="../pdf_dokument/einfuehrungskurs_legislative.pdf" download="einfuehrungskurs_legislative.pdf" target="_blank" class="download">Als PDF herunterladen</a>
+    </div>
     <h2 class="titleSmall">Aufgaben der Legislative</h2>
+
+    <p class="introduction">In dieser Webseite werden die Aufgaben und Zuständigkeiten der Schweizer Legislative, unterteilt in zwei Kammern, den Nationalrat und den Ständerat, genauer erläutert.</p>
+
     <div class="flexbox">
         <div class="tableOfContent">
+            <h2>Inhaltsverzeichnis</h2>
             <ul>
-                <li><a href="#title1">Rechtsetzung</a></li>
-                <li><a href="#title2">Komissionen</a></li>
-                <li><a href="#title3">Legislaturplannungskommissionen
-LPK</a></li>
-                <li><a href="#title4">Geschäftsprüfungskommissionen
-GPK</a></li>
-                <li><a href="#title5">Finanzen</a></li>
-                <li><a href="#title6">Voranschlag</a></li>
-                <li><a href="#title7">Nachtragskredite</a></li>
-                <li><a href="#title8">Ordentliches Verfahren</a></li>
-                <li><a href="#title9">Dringliches Verfahren</a></li>
-                <li><a href="#title10">Wahl der Bundesorgane</a></li>
-                <li><a href="#title11">Bundesratswahlen</a></li>
-                <li><a href="#title12">Oberaufsicht</a></li>
-                <li><a href="#title13">Mitwirken in der
-Aussenpolitik</a></li>
-                <li><a href="#title14">Ordentliches Verfahren</a></li>
-                <li><a href="#title15">Vereinfachtes Verfahren</a></li>
-                <li><a href="#title16">Gewährleistung der
-Verfassungen</a></li>
+                <li><a href="#title1" onclick="showText('text1', document.getElementById('button1'))">Rechtsetzung</a></li>
+                <ul>
+                    <li><a href="#title2" onclick="const d1 = showText('text2', document.getElementById('button2')); cascadeText(d1, 'text1', 'button1')">Komissionen</a></li>
+                    <ul>
+                        <li><a href="#title3" onclick="const d2 = showText('text3', document.getElementById('button3')); cascadeText(d2, 'text1', 'button1'); cascadeText(d2, 'text2', 'button2')">LPK</a></li>
+                        <li><a href="#title4" onclick="const d3 = showText('text4', document.getElementById('button4')); cascadeText(d3, 'text1', 'button1'); cascadeText(d3, 'text2', 'button2')">GPK</a></li>
+                    </ul>
+                </ul>
+                <li><a href="#title5" onclick="showText('text5', document.getElementById('button5'))">Finanzen</a></li>
+                <ul>
+                    <li><a href="#title6" onclick="const d4 = showText('text6', document.getElementById('button6')); cascadeText(d4, 'text5', 'button5')">Voranschlag</a></li>
+                    <li><a href="#title7" onclick="const d5 = showText('text7', document.getElementById('button7')); cascadeText(d5, 'text5', 'button5')">Nachtragskredite</a></li>
+                    <ul>
+                        <li><a href="#title8" onclick="const d6 = showText('text8', document.getElementById('button8')); cascadeText(d6, 'text5', 'button5');  cascadeText(d6, 'text7', 'button7')">Ordentliches Verfahren</a></li>
+                        <li><a href="#title9" onclick="const d7 = showText('text9', document.getElementById('button9')); cascadeText(d7, 'text5', 'button5');  cascadeText(d7, 'text7', 'button7')">Dringliches Verfahren</a></li>
+                    </ul>
+                </ul>
+                <li><a href="#title10" onclick="showText('text10', document.getElementById('button10'))">Wahl der Bundesorgane</a></li>
+                <ul>
+                    <li><a href="#title11" onclick="const d8 = showText('text11', document.getElementById('button11')); cascadeText(d8, 'text10', 'button10')">Bundesratswahlen</a></li>
+                </ul>
+                <li><a href="#title12" onclick="showText('text12', document.getElementById('button12'))">Oberaufsicht</a></li>
+                <li><a href="#title13" onclick="showText('text13', document.getElementById('button13'))">Mitwirken in der Aussenpolitik</a></li>
+                <ul>
+                    <li><a href="#title14" onclick="const d9 = showText('text14', document.getElementById('button14')); cascadeText(d9, 'text13', 'button13')">Ordentliches Verfahren</a></li>
+                    <li><a href="#title15" onclick="const d10 = showText('text15', document.getElementById('button15')); cascadeText(d10, 'text13', 'button13')">Vereinfachtes Verfahren</a></li>
+                </ul>
+                <li><a href="#title16" onclick="showText('text16', document.getElementById('button16'))">Gewährleistung der Verfassungen</a></li>
             </ul>
         </div>
+
+
+
         <div class="contentWrapper">
             <div class="content">
-                <h2 id="title1">Rechtsetzung</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text1', this)">
+                <div class="title-row">
+                    <h2 id="title1">Rechtsetzung</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text1', this)" id="button1">
+                </div>
                 <div id="text1"class="text">
-                <p>Eine der Hauptaufgaben der Legislative ist die Gesetzgebung. Zusammen
-entscheiden die insgesamt 246 demokratisch gewählten Mitglieder der
-Bundesversammlung über Gesetzesänderungen auf nationaler Ebene.<br />
-Dies gilt ebenfalls für Änderungen der Bundesverfassung, wobei die
-Kontrolle darüber stärker ist, weil ein doppeltes Mehr (Mehrheit im Volk
-und der Kantone) zwingend notwendig ist.</p>
+                    <p>Eine der Hauptaufgaben der Legislative ist die Gesetzgebung. Zusammen entscheiden die insgesamt 246 demokratisch gewählten Mitglieder der Bundesversammlung über Gesetzesänderungen auf nationaler Ebene.<br /> Dies gilt ebenfalls für Änderungen der Bundesverfassung, wobei die Kontrolle darüber stärker ist, weil ein doppeltes Mehr (Mehrheit im Volk und der Kantone) zwingend notwendig ist.</p>
+                    <div class="title-row">
+                        <h3 id="title2">Komissionen</h3>
+                        <input type="button" value="Ausklappen" onclick="showText('text2', this)" id="button2">
+                    </div>
+                    <div class="text" id="text2">
+                        <p>Das Parlament besitzt auch Komissionen, welche aus einigen Ratsmitgliedern bestehen. Hauptsächlich beraten sie und arbeiten Vorschläge für das Parlament aus. In diesem Kapitel werden einige davon exemplarisch beleuchtet.</p>
+                        <div class="title-row">
+                            <h4 id="title3">Legislaturplannungskommissionen LPK</h4>
+                            <input type="button" value="Ausklappen" onclick="showText('text3', this)" id="button3">
+                        </div>
+                        <div class="text" id="text3">
+                            <p>Die LPK bestehen aus 22 Mitgliedern des Nationalrates und 11 Mitgliedern des Ständerates (Stand 2025). Sie gehören zu den Spezialkommissionen und ihre Aufgabe besteht darin, den Entwurf des Bundesrates zur Legislaturplanung vorzuberaten. Dieser Entwurf wird zu Beginn jeder Legislaturperiode, also nach jeder Gesamterneuerungswahl der Räte, der Bundesversammlung vorgelegt. Er definiert politische Ziele und plant Erlasse der Bundesversammlung zur entsprechenden Umsetzung.</p>
+                        </div>
+                        <div class="title-row">
+                            <h4 id="title4">Geschäftsprüfungskommissionen GPK</h4>
+                            <input type="button" value="Ausklappen" onclick="showText('text4', this)" id="button4">
+                        </div>
+                        <div class="text" id="text4">
+                            <p>Die GPK bestehen aus 24 Mitgliedern des Nationalrates und 13 Mitgliedern des STänderates (Stand 2025). Sie gehören zu den Aufsichtskomissionen und überprüfen die Geschäftsführung des Bundesrates und der Bundesverwaltung.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="content">
-               <h2 id="title2">Komissionen</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text2', this)">
-                <div class="text" id="text2">
-                <p>Das Parlament besitzt auch Komissionen, welche aus einigen
-Ratsmitgliedern bestehen. Hauptsächlich beraten sie und arbeiten
-Vorschläge für das Parlament aus. In diesem Kapitel werden einige davon
-exemplarisch beleuchtet.</p>
+                <div class="title-row">
+                    <h2 id="title5">Finanzen</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text5', this)" id="button5">
                 </div>
-            </div>
-            <div class="content">
-                <h2 id="title3">Legislaturplannungskommissionen
-LPK</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text3', this)">
-                <div class="text" id="text3">
-               <p>Die LPK bestehen aus 22 Mitgliedern des Nationalrates und 11
-Mitgliedern des Ständerates (Stand 2025). Sie gehören zu den
-Spezialkommissionen und ihre Aufgabe besteht darin, den Entwurf des
-Bundesrates zur Legislaturplanung vorzuberaten. Dieser Entwurf wird zu
-Beginn jeder Legislaturperiode, also nach jeder Gesamterneuerungswahl
-der Räte, der Bundesversammlung vorgelegt. Er definiert politische Ziele
-und plant Erlasse der Bundesversammlung zur entsprechenden
-Umsetzung.</p>
-                </div>
-            </div>            
-            <div class="content">
-                <h2 id="title4">Geschäftsprüfungskommissionen
-GPK</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text4', this)">
-                <div class="text" id="text4">
-                <p>Die GPK bestehen aus 24 Mitgliedern des Nationalrates und 13
-Mitgliedern des STänderates (Stand 2025). Sie gehören zu den
-Aufsichtskomissionen und überprüfen die Geschäftsführung des Bundesrates
-und der Bundesverwaltung.</p>
-                </div>
-            </div>
-            <div class="content">
-                <h2 id="title5">Finanzen</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text5', this)">
                 <div class="text" id="text5">
-               <p>Die Bundesversammlung entscheidet nicht nur über Gesetze, sondern
-auch über die Finanzen des Bundes. Dies umfasst hauptsächlich den
-Voranschlag sowie etwaige Nachtragskredite.</p>
+                    <p>Die Bundesversammlung entscheidet nicht nur über Gesetze, sondern auch über die Finanzen des Bundes. Dies umfasst hauptsächlich den Voranschlag sowie etwaige Nachtragskredite.</p>
+                    <div class="title-row">
+                        <h2 id="title6">Voranschlag</h2>
+                        <input type="button" value="Ausklappen" onclick="showText('text6', this)" id="button6">
+                    </div>
+                    <div class="text" id="text6">
+                        <p>Das Parlament nimmt einen Vorschlag des Bundesrates entgegen und ist befugt, Änderungen zu erlassen. Der Voranschlag zeigt für das kommende Jahr und die drei darauffolgenden Jahre die geplanten Ausgaben und Einnahmen des Bundes.</p>
+                    </div>
+                    <div class="title-row">
+                        <h2 id="title7">Nachtragskredite</h2>
+                        <input type="button" value="Ausklappen" onclick="showText('text7', this)" id="button7">
+                    </div>
+                    <div class="text" id="text7">
+                        <p>Sollte sich im Laufe des Jahres zeigen, dass die zur Verfügung gestellten Mittel nicht ausreichen, kann ein Nachtragskredit für einzelne Sektoren beantragt werden.</p>
+                        <div class="title-row">
+                            <h3 id="title8">Ordentliches Verfahren</h3>
+                            <input type="button" value="Ausklappen" onclick="showText('text8', this)" id="button8">
+                        </div>
+                        <div class="text" id="text8">
+                            <p>Zweimal jährlich legt der Bundesrat der Bundesversammlung die Nachtragskredite vor. Diese werden in der Sommer- oder Wintersession behandelt.</p>
+                        </div>
+                        <div class="title-row">
+                            <h3 id="title9">Dringliches Verfahren</h3>
+                            <input type="button" value="Ausklappen" onclick="showText('text9', this)" id="button9">
+                        </div>
+                        <div class="text" id="text9">
+                            <p>Sollte es einen Ausgabe oder Investition geben, welche nicht aufgeschoben werden kann, ist der Bundesrat dazu berechtigt, den Nachtragskredit mit Zustimmung der Finanzdelegation selbst zu beschliessen. Die Zustimmung der Bundesversammlung muss jedoch nachträglich eingeholt werden.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="content">
-                <h2 id="title6">Voranschlag</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text6', this)">
-                <div class="text" id="text6">
-               <p>Das Parlament nimmt einen Vorschlag des Bundesrates entgegen und ist
-befugt, Änderungen zu erlassen. Der Voranschlag zeigt für das kommende
-Jahr und die drei darauffolgenden Jahre die geplanten Ausgaben und
-Einnahmen des Bundes.</p>
+                <div class="title-row">
+                    <h2 id="title10">Wahl der Bundesorgane</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text10', this)" id="button10">
                 </div>
-            </div>
-            <div class="content">
-                <h2 id="title7">Nachtragskredite</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text7', this)">
-                <div class="text" id="text7">
-               <p>Sollte sich im Laufe des Jahres zeigen, dass die zur Verfügung
-gestellten Mittel nicht ausreichen, kann ein Nachtragskredit für
-einzelne Sektoren beantragt werden.</p>
-                </div>
-            </div>
-            <div class="content">
-                <h2 id="title8">Ordentliches Verfahren</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text8', this)">
-                <div class="text" id="text8">
-               <p>Zweimal jährlich legt der Bundesrat der Bundesversammlung die
-Nachtragskredite vor. Diese werden in der Sommer- oder Wintersession
-behandelt.</p>
-                </div>
-            </div>
-            <div class="content">
-                <h2 id="title9">Dringliches Verfahren</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text9', this)">
-                <div class="text" id="text9">
-                <p>Sollte es einen Ausgabe oder Investition geben, welche nicht
-aufgeschoben werden kann, ist der Bundesrat dazu berechtigt, den
-Nachtragskredit mit Zustimmung der Finanzdelegation selbst zu
-beschliessen. Die Zustimmung der Bundesversammlung muss jedoch
-nachträglich eingeholt werden.</p>
-                </div>
-            </div>
-            <div class="content">
-                <h2 id="title10">Wahl der Bundesorgane</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text10', this)">
                 <div class="text" id="text10">
-                <p>Eine weitere Aufgabe des Parlaments ist die Wahl der Bundesorgane,
-also der Mitglieder der obersten Bundesbehörden. Dazu gehören unter
-anderem der Bundesrat (4 Jahre Amtszeit) zusammen mit dem Bundeskanzler
-(1 Jahr Amtszeit) oder der Bundeskanzlerin, die Richterinnen und Richter
-der Bundesgerichte (6 Jahre Amtszeit), sowie die Bundesanwaltschaft (4
-Jahre Amtszeit).</p>
-                </div>
-            </div><div class="content">
-                <h2 id="title11">Bundesratswahlen</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text11', this)">
-                <div class="text" id="text11">
-                <p>Die Mitglieder des Bundesrates werden von der Bundesversammlung auf
-eine Amtszeit von 4 Jahren gewählt. Die Gesamterneuerungswahlen
-geschehen in der Wintersession nach den Nationalratswahlen,
-traditionsgemäss am Mittwoch der zweiten Sessionswoche. Die letzte
-Gesamterneuerungswahl (Stand 2025) war am 13. Dezember 2023. Die neu
-gewählten Mitglieder treten ihr Amt am 1. Januar nach der Wahl an.<br />
-Ausserordentliche Gesamterneuerungswahlen sind durch Totalrevisionen der
-Verfassung möglich. Diese können vom Volk oder von den Räten initiiert
-werden. Wird einer Totalrevision zugestimmt, kommt es zu
-ausserordentlichen Neuwahlen des Bundesrates sowie der beiden Kammern
-der Bundesversammlung. Jeder Bundesrat ist Vorstand eines Departementes.
-Diese Verteilung geschieht nicht durch das Parlament.</p>
-<figure>
-<div class="center">
-<img src="a.o._Gesamterneuerung-d.png" style="width:80.0%" />
-</div>
-<figcaption>Ablauf Gesamterneuerungswahlen <span class="citation"
-data-cites="ao_gesamterneuerung"></span></figcaption>
-</figure>
+                    <p>Eine weitere Aufgabe des Parlaments ist die Wahl der Bundesorgane, also der Mitglieder der obersten Bundesbehörden. Dazu gehören unter anderem der Bundesrat (4 Jahre Amtszeit) zusammen mit dem Bundeskanzler (1 Jahr Amtszeit) oder der Bundeskanzlerin, die Richterinnen und Richter der Bundesgerichte (6 Jahre Amtszeit), sowie die Bundesanwaltschaft (4 Jahre Amtszeit).</p>
+                    <div class="title-row">
+                        <h3 id="title11">Bundesratswahlen</h3>
+                        <input type="button" value="Ausklappen" onclick="showText('text11', this)" id="button11">
+                    </div>
+                    <div class="text" id="text11">
+                        <p>Die Mitglieder des Bundesrates werden von der Bundesversammlung auf eine Amtszeit von 4 Jahren gewählt. Die Gesamterneuerungswahlen geschehen in der Wintersession nach den Nationalratswahlen, traditionsgemäss am Mittwoch der zweiten Sessionswoche. Die letzte Gesamterneuerungswahl (Stand 2025) war am 13. Dezember 2023. Die neu gewählten Mitglieder treten ihr Amt am 1. Januar nach der Wahl an.<br /> Ausserordentliche Gesamterneuerungswahlen sind durch Totalrevisionen der Verfassung möglich. Diese können vom Volk oder von den Räten initiiert werden. Wird einer Totalrevision zugestimmt, kommt es zu ausserordentlichen Neuwahlen des Bundesrates sowie der beiden Kammern der Bundesversammlung. Jeder Bundesrat ist Vorstand eines Departementes. Diese Verteilung geschieht nicht durch das Parlament.</p>
+                        <figure>
+                            <div>
+                                <img src="a.o._Gesamterneuerung-d.png" style="width:80.0%" />
+                            </div>
+                            <figcaption>Ablauf Gesamterneuerungswahlen <span class="citation" data-cites="ao_gesamterneuerung"></span></figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
             <div class="content">
-                <h2 id="title12">Oberaufsicht</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text12', this)">
+                <div class="title-row">
+                    <h2 id="title12">Oberaufsicht</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text12', this)" id="button12">
+                </div>
                 <div class="text" id="text12">
-               <p>Weiter übernehmen die Aufsichtskomissionen der Räte in deren Auftrag
-die Oberaufsicht über die Organe des Bundes. Dies umfasst im
-wesentlichen vier Punkte:</p>
-<ul>
-<li><p>Die Übereinstimmung von Entscheiden der Bundesbehörden mit der
-Verfassung</p></li>
-<li><p>Die Zweckmässigkeit der von den Behörden gewählten
-Massnahmen</p></li>
-<li><p>Die Wirksamkeit jener Massnahmen sowie</p></li>
-<li><p>Das Verhältnis zwischen eingesetzten Ressourcen und erhaltenem
-Ergebnis</p></li>
-</ul>
-<p>Zur Durchsetzung dieser Kontrolle führen die Aufsichtskomissionen
-Inspektionen durch oder besichtigen die Amtsstellen der Verwaltung. Auch
-werden die Staatsrechnung, der Geschäftsbericht des Bundesrates und
-weitere Jahresberichte der Organe überprüft.<br />
-Die Informationssuche der Aufsichtsorgane beschränkt sich jedoch nicht
-auf Bundesbehörden, sondern umfasst auch Personen und Amtsstellen
-ausserhalb der Bundesverwaltung, sofern diese Informationen besitzen,
-welche für die Oberaufsicht notwendig sind.</p>
+                    <p>Weiter übernehmen die Aufsichtskomissionen der Räte in deren Auftrag die Oberaufsicht über die Organe des Bundes. Dies umfasst im wesentlichen vier Punkte:</p>
+                    <ul>
+                        <li><p>Die Übereinstimmung von Entscheiden der Bundesbehörden mit der Verfassung</p></li>
+                        <li><p>Die Zweckmässigkeit der von den Behörden gewählten Massnahmen</p></li>
+                        <li><p>Die Wirksamkeit jener Massnahmen sowie</p></li>
+                        <li><p>Das Verhältnis zwischen eingesetzten Ressourcen und erhaltenem Ergebnis</p></li>
+                    </ul>
+                    <p>Zur Durchsetzung dieser Kontrolle führen die Aufsichtskomissionen Inspektionen durch oder besichtigen die Amtsstellen der Verwaltung. Auch werden die Staatsrechnung, der Geschäftsbericht des Bundesrates und weitere Jahresberichte der Organe überprüft.<br /> Die Informationssuche der Aufsichtsorgane beschränkt sich jedoch nicht auf Bundesbehörden, sondern umfasst auch Personen und Amtsstellen ausserhalb der Bundesverwaltung, sofern diese Informationen besitzen, welche für die Oberaufsicht notwendig sind.</p>
                 </div>
             </div>
             <div class="content">
-                <h2 id="title13">Mitwirken in der
-Aussenpolitik</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text13', this)">
+                <div class="title-row">
+                    <h2 id="title13">Mitwirken in der Aussenpolitik</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text13', this)" id="button13">
+                </div>
                 <div class="text" id="text13">
-               <p>Auch die Aussenpolitik der Schweiz wird massgeblich vom Parlament
-beeinflusst. Der Bundesrat steht in Kontakt mit den für die
-Aussenpolitik zuständigen Kommissionen der Bundesversammlung.
-Grundsätzlich sind völkerrechtliche Verträge von der Bundesversammlung
-abzusegnen. Dies wird <em>ordentliches Verfahren</em> genannt.<br />
-Im Gegensatz dazu existiert das <em>vereinfachte Verfahren</em>, bei
-welchen der Bundesrat zum selbstständigen Vertragsabschluss ermächtigt
-ist.</p>
+                    <p>Auch die Aussenpolitik der Schweiz wird massgeblich vom Parlament beeinflusst. Der Bundesrat steht in Kontakt mit den für die Aussenpolitik zuständigen Kommissionen der Bundesversammlung. Grundsätzlich sind völkerrechtliche Verträge von der Bundesversammlung abzusegnen. Dies wird <em>ordentliches Verfahren</em> genannt.<br /> Im Gegensatz dazu existiert das <em>vereinfachte Verfahren</em>, bei welchen der Bundesrat zum selbstständigen Vertragsabschluss ermächtigt ist.</p>
+                    <div class="title-row">
+                        <h3 id="title14">Ordentliches Verfahren</h3>
+                        <input type="button" value="Ausklappen" onclick="showText('text14', this)" id="button14">
+                    </div>
+                    <div class="text" id="text14">
+                        <p>Der Bundesrat befragt die für die Aussenpolitik zuständigen Kommissionen zu den Richtlinien und führt die Vertragsverhandlugnen. Nach der Unterzeichnung wird der Vertrag an die Bundesversammlung zur Genehmigung weitergereicht.<br /> Grundsätzlich wird nur über den gesamten Vertrag entschieden. Ist dies jedoch möglich, kann das Parlament den Bundesrat zur Einbringung eines Vorbehaltes verpflichten. Wird ein Vertrag zum zweiten Mal abgelehnt, ist die Entscheidung entdgültig.<br /> Hat die Bundesversammlung dem Vertrag zugestimmt, wird dieser vom Bundesrat ratifiziert und in Kraft gesetzt.</p>
+                        <div class="wrapfigure">
+                            <p><img src="Genehmigung_Staatsvertraege-d.png" style="width:50.0%" alt="image" /></p>
+                        </div>
+                    </div>
+                    <div class="title-row">
+                        <h3 id="title15">Vereinfachtes Verfahren</h3>
+                        <input type="button" value="Ausklappen" onclick="showText('text15', this)" id="button15">
+                    </div>
+                    <div class="text" id="text15">
+                        <p>Ein Gesetz oder oder ein durch das Parlament genehmigter völkerrechtlicher Vertrag kann der Bundesrat selbstständig einen Vertrag abschliessen.<br /> Das Parlament erhält einen jährlichen Bericht vom Bundesrat über die abgeschlossenen Verträge. Sehen sich die Räte als zuständig, können sie ein nachträgliches ordentliches Verfahren verlangen.</p>
+                    </div>
                 </div>
             </div>
             <div class="content">
-                <h2 id="title14">Ordentliches Verfahren</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text14', this)">
-                <div class="text" id="text14">
-               <div class="wrapfigure">
-<p><img
-src="Genehmigung_Staatsvertraege-d.png" style="width:90.0%"
-alt="image" /></p>
-</div>
-<p>Der Bundesrat befragt die für die Aussenpolitik zuständigen
-Kommissionen zu den Richtlinien und führt die Vertragsverhandlugnen.
-Nach der Unterzeichnung wird der Vertrag an die Bundesversammlung zur
-Genehmigung weitergereicht.<br />
-Grundsätzlich wird nur über den gesamten Vertrag entschieden. Ist dies
-jedoch möglich, kann das Parlament den Bundesrat zur Einbringung eines
-Vorbehaltes verpflichten. Wird ein Vertrag zum zweiten Mal abgelehnt,
-ist die Entscheidung entdgültig.<br />
-Hat die Bundesversammlung dem Vertrag zugestimmt, wird dieser vom
-Bundesrat ratifiziert und in Kraft gesetzt.</p>
+                <div class="title-row">
+                    <h2 id="title16">Gewährleistung der Verfassungen</h2>
+                    <input type="button" value="Ausklappen" onclick="showText('text16', this)" id="button16">
                 </div>
-            </div>
-            <div class="content">
-                <h2 id="title15">Vereinfachtes Verfahren</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text15', this)">
-                <div class="text" id="text15">
-               <p>Ein Gesetz oder oder ein durch das Parlament genehmigter
-völkerrechtlicher Vertrag kann der Bundesrat selbstständig einen Vertrag
-abschliessen.<br />
-Das Parlament erhält einen jährlichen Bericht vom Bundesrat über die
-abgeschlossenen Verträge. Sehen sich die Räte als zuständig, können sie
-ein nachträgliches ordentliches Verfahren verlangen.</p>
-                </div>
-            </div>
-            <div class="content">
-                <h2 id="title16">Gewährleistung der
-Verfassungen</h2>
-                <input type="button" value="Ausklappen" onclick="showText('text16', this)">
                 <div class="text" id="text16">
-                <p>Die Bundesversammlung ist ebenfalls für die Gewährleistung der
-Kantonsverfassungen verantwortlich. Sie überprüft den Inhalt der
-Verfassungen und entscheidet, ob diese der Auslegung der
-Bundesverfassung entspricht. Die Kantone müssen jegliche
-Verfassungsänderungen mitteilen und um eine Überprüfung bitten.</p>
+                    <p>Die Bundesversammlung ist ebenfalls für die Gewährleistung der Kantonsverfassungen verantwortlich. Sie überprüft den Inhalt der Verfassungen und entscheidet, ob diese der Auslegung der Bundesverfassung entspricht. Die Kantone müssen jegliche Verfassungsänderungen mitteilen und um eine Überprüfung bitten.</p>
                 </div>
             </div>
         </div>

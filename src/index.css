@@ -12,11 +12,29 @@
     padding: 1rem;
     margin: 1rem;
 }
+.introduction {
+    font-size: 1.3em;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.download {
+    padding: 1rem;
+    margin: 1rem;
+    width: 75%;
+    height: 2em;
+    border: 3px solid darkblue;
+    background-color: darkblue;
+    border-radius: 1rem;
+    color: white;
+}
 
 input {
     border: 4px solid gray;
     border-radius: 0.5rem;
-    background: lightgray;  
+    background: lightgray;
+    width: 7em;
+    height: 3em;
 }
 input:hover {
     cursor: pointer;
@@ -39,8 +57,7 @@ input:hover {
 }
 
 li {
-    list-style: none;
-    list-style-type: none;
+    list-style: inside;
 }
 
 .text {
@@ -64,6 +81,25 @@ body {
         width: 80%;
     }
 
+.title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+.main-title-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.title-row input {
+    flex-shrink: 0;
+}
+
+
 footer {
     background-color: lightblue;
     padding: 1em;
@@ -86,16 +122,27 @@ footer {
     }
 
     .tableOfContent {
-        font-size: 1.2em;
-        display: inline;
-        padding: 1rem;
-        margin: 2rem;
-        min-width: 15%;
+        font-size: 100%;
+        display: block;
+        position: sticky;
+        top: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        max-width: 30%;
         align-self: flex-start;   
         background-color: lightblue;
         height: auto;
         border: 3px lightblue solid;
         border-radius: 1em;
+    }
+    .tableOfContent ul {
+        padding-left: 0.5rem;
+        margin-left: 0;
+    }
+    .tableOfContent li {
+        list-style-position: inside;
+        padding-left: 0;
+        margin-left: 0;
     }
     .contentWrapper {
         padding: 1rem;
@@ -118,5 +165,18 @@ footer {
         max-width: 70%;
         margin-left: 15%;
         text-align: center;
+    }
+    input {    
+        width: 7em;
+        height: 3em;
+    }
+    .introduction{
+        width: 50%;
+    }
+    .main-title-row {
+        flex-direction: row;
+    }
+    .download {
+        width: auto;
     }
  }
