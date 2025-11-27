@@ -9,5 +9,5 @@
 .*synctex(busy)
 *.toc
 *.pdf
-!/src/pages/**/*
-!/src/pages/
+!/docs/**/*
+!/docs/
