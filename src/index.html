@@ -24,8 +24,10 @@
                 <ul>
                     <li><a href="#title2" onclick="const d1 = showText('text2', document.getElementById('button2')); cascadeText(d1, 'text1', 'button1')">Komissionen</a></li>
                     <ul>
-                        <li><a href="#title3" onclick="const d2 = showText('text3', document.getElementById('button3')); cascadeText(d2, 'text1', 'button1'); cascadeText(d2, 'text2', 'button2')">LPK</a></li>
-                        <li><a href="#title4" onclick="const d3 = showText('text4', document.getElementById('button4')); cascadeText(d3, 'text1', 'button1'); cascadeText(d3, 'text2', 'button2')">GPK</a></li>
+                        <li class="text-short"><a href="#title3a" onclick="const d2a = showText('text3', document.getElementById('button3')); cascadeText(d2a, 'text1', 'button1'); cascadeText(d2a, 'text2', 'button2')">LPK</a></li>
+                        <li class="text-short"><a href="#title4a" onclick="const d3a = showText('text4', document.getElementById('button4')); cascadeText(d3a, 'text1', 'button1'); cascadeText(d3a, 'text2', 'button2')">GPK</a></li>
+                        <li class="text-long"><a href="#title3b" onclick="const d2b = showText('text3', document.getElementById('button3')); cascadeText(d2b, 'text1', 'button1'); cascadeText(d2b, 'text2', 'button2')">Legislaturplannungskommissionen LPK</a></li>
+                        <li class="text-long"><a href="#title4b" onclick="const d3b = showText('text4', document.getElementById('button4')); cascadeText(d3b, 'text1', 'button1'); cascadeText(d3b, 'text2', 'button2')">Geschäftsprüfungskommissionen GPK</a></li>
                     </ul>
                 </ul>
                 <li><a href="#title5" onclick="showText('text5', document.getElementById('button5'))">Finanzen</a></li>
@@ -68,17 +70,21 @@
                     <div class="text" id="text2">
                         <p>Das Parlament besitzt auch Komissionen, welche aus einigen Ratsmitgliedern bestehen. Hauptsächlich beraten sie und arbeiten Vorschläge für das Parlament aus. In diesem Kapitel werden einige davon exemplarisch beleuchtet.</p>
                         <div class="title-row">
-                            <h4 id="title3">Legislaturplannungskommissionen LPK</h4>
+                            <h4 id="title3b" class="text-long">Legislaturplannungskommissionen LPK</h4>
+                            <h4 id="title3a" class="text-short">LPK</h4>
                             <input type="button" value="Ausklappen" onclick="showText('text3', this)" id="button3">
                         </div>
                         <div class="text" id="text3">
+                            <p class="text-short">Legislaturplannungskommissionen LPK</p>
                             <p>Die LPK bestehen aus 22 Mitgliedern des Nationalrates und 11 Mitgliedern des Ständerates (Stand 2025). Sie gehören zu den Spezialkommissionen und ihre Aufgabe besteht darin, den Entwurf des Bundesrates zur Legislaturplanung vorzuberaten. Dieser Entwurf wird zu Beginn jeder Legislaturperiode, also nach jeder Gesamterneuerungswahl der Räte, der Bundesversammlung vorgelegt. Er definiert politische Ziele und plant Erlasse der Bundesversammlung zur entsprechenden Umsetzung.</p>
                         </div>
                         <div class="title-row">
-                            <h4 id="title4">Geschäftsprüfungskommissionen GPK</h4>
+                            <h4 id="title4b" class="text-long">Geschäftsprüfungskommissionen GPK</h4>
+                            <h4 id="title4a" class="text-short">GPK</h4>
                             <input type="button" value="Ausklappen" onclick="showText('text4', this)" id="button4">
                         </div>
                         <div class="text" id="text4">
+                            <p class="text-short">Geschäftsprüfungskommissionen GPK</p>
                             <p>Die GPK bestehen aus 24 Mitgliedern des Nationalrates und 13 Mitgliedern des STänderates (Stand 2025). Sie gehören zu den Aufsichtskomissionen und überprüfen die Geschäftsführung des Bundesrates und der Bundesverwaltung.</p>
                         </div>
                     </div>

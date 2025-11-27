@@ -14,8 +14,9 @@
 }
 .introduction {
     font-size: 1.3em;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1rem ;
+    margin: 1rem    ;
+    
 }
 
 .download {
@@ -81,6 +82,13 @@ body {
         width: 80%;
     }
 
+    h2 {
+        font-size: 100%;
+    }
+    h3 {
+        font-size: 90%;
+    }
+
 .title-row {
     display: flex;
     flex-direction: row;
@@ -107,6 +115,14 @@ footer {
     border: 5px lightblue solid;
     border-radius: 1em;
     text-align: center;
+}
+
+.text-short {
+    display: inherit;
+}
+
+.text-long {
+    display: none;
 }
 
 @media screen and (min-width: 599px){
@@ -161,6 +177,12 @@ footer {
         margin: 1em;
         width: 100%;
     }
+    h2 {
+        font-size: larger;
+    }
+    h3 {
+        font-size: large;
+    }
     footer {
         max-width: 70%;
         margin-left: 15%;
@@ -172,11 +194,24 @@ footer {
     }
     .introduction{
         width: 50%;
+        margin-left: 6em;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     .main-title-row {
         flex-direction: row;
     }
     .download {
         width: auto;
+    }
+ }
+
+ @media screen and (min-width: 999px) {
+    .text-short {
+        display: none;
+    }
+    .text-long {
+        display: inherit;
     }
  }
