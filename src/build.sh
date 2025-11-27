@@ -11,3 +11,5 @@ cp ../pdf_dokument/images/a.o._Gesamterneuerung-d.png ../docs/img/a.o._Gesamtern
 cp ../pdf_dokument/images/Genehmigung_Staatsvertraege-d.png ../docs/img/Genehmigung_Staatsvertraege-d.png
 
 cp ../pdf_dokument/einfuehrungskurs_legislative.pdf ../docs/files/einfuehrungskurs_legislative.pdf
+
+echo "Finished Build"

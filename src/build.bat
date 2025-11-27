@@ -11,5 +11,5 @@ copy ..\pdf_dokument\images\Genehmigung_Staatsvertraege-d.png ..\docs\img\Genehm
 
 copy ..\pdf_dokument\einfuehrungskurs_legislative.pdf ..\docs\files\einfuehrungskurs_legislative.pdf
 
-echo Files copied successfully.
+echo Finished Build.
 pause
